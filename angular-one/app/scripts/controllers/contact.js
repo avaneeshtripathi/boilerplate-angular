@@ -8,9 +8,14 @@
    * Controller of the angularOneApp
    */
   angular.module('angularOneApp')
-    .controller('ContactController', function () {
+    .controller('ContactController', function ($scope) {
       this.awesomeThings = [
         'HTML5 Boilerplate',
         'AngularJS'
       ];
+      var name = {
+        firstName: 'First',
+        lastName: 'Name'
+      };
+      $scope.name = name;
     });
